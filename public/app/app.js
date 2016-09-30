@@ -71,8 +71,6 @@ app.controller('MainController', function ($scope) {
       }
 
       $scope.finalData["name"] = studentName;
-
-      console.log($scope)
     }
   });
 
@@ -84,12 +82,16 @@ app.controller('MainController', function ($scope) {
         dataType:'json',
         url: '/'
     });
+
     $scope.action = "THANK YOU!!!";
+
     alert("Thank you!");
+
+    location.reload();
   }
 });
 
-// 2500+ element dictionary in memory, mapping class number to class name.
+// 4000+ element dictionary in memory, mapping class number to class name.
 var numberToClass = {
   "02-201" : "Programming for Scientists",
   "02-261" : "Quantitative Cell and Molecular Biology Laboratory",
